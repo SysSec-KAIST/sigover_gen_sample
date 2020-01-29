@@ -218,3 +218,22 @@ Support
 ========
 
 Mailing list: http://www.softwareradiosystems.com/mailman/listinfo/srslte-users
+
+
+GEN SAMPLE
+========
+
+```
+git checkout gen_sample
+mkdir build
+cd build
+cmake ..
+make
+
+sudo lib/test/common/gen_sample -i -v -s @
+@: your paging occasion
+
+(example)
+sudo lib/test/common/gen_sample -i -v -s 9
+```
+
