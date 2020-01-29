@@ -67,6 +67,9 @@ add_executable(pdu_test pdu_test.cc)
 target_link_libraries(pdu_test srslte_phy srslte_common ${CMAKE_THREAD_LIBS_INIT})
 add_test(pdu_test pdu_test)
 
+add_executable(gen_sample gen_sample.cc)
+target_link_libraries(gen_sample srslte_phy srslte_common srslte_upper rrc_asn1 srslte_asn1 ${SEC_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+
 if (ENABLE_5GNR)
   add_executable(mac_nr_pdu_test mac_nr_pdu_test.cc)
   target_link_libraries(mac_nr_pdu_test srslte_phy srslte_common ${CMAKE_THREAD_LIBS_INIT})

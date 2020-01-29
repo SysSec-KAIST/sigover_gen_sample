@@ -346,6 +346,17 @@ void srslte_enb_dl_put_base(srslte_enb_dl_t* q, srslte_dl_sf_cfg_t* dl_sf)
   put_pcfich(q);
 }
 
+void srslte_enb_dl_put_base_wo_sync(srslte_enb_dl_t* q, srslte_dl_sf_cfg_t* dl_sf)
+{
+  srslte_ofdm_set_non_mbsfn_region(&q->ifft_mbsfn, dl_sf->non_mbsfn_region);
+  q->dl_sf = *dl_sf;
+  clear_sf(q);
+  //put_sync(q);
+  put_refs(q);
+  //put_mib(q);
+  put_pcfich(q);
+}
+
 void srslte_enb_dl_put_phich(srslte_enb_dl_t* q, srslte_phich_grant_t* grant, bool ack)
 {
   srslte_phich_resource_t resource;

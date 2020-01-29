@@ -104,6 +104,7 @@ SRSLTE_API int srslte_enb_dl_add_rnti(srslte_enb_dl_t* q, uint16_t rnti);
 SRSLTE_API void srslte_enb_dl_rem_rnti(srslte_enb_dl_t* q, uint16_t rnti);
 
 SRSLTE_API void srslte_enb_dl_put_base(srslte_enb_dl_t* q, srslte_dl_sf_cfg_t* dl_sf);
+SRSLTE_API void srslte_enb_dl_put_base_wo_sync(srslte_enb_dl_t* q, srslte_dl_sf_cfg_t* dl_sf);
 
 SRSLTE_API void srslte_enb_dl_put_phich(srslte_enb_dl_t* q, srslte_phich_grant_t* grant, bool ack);
 
