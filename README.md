@@ -255,6 +255,7 @@ sudo lib/test/common/gen_sample -i -v -s @
 @: your paging occasion
 
 (example)
-sudo lib/test/common/gen_sample -i -v -s 9
+sudo lib/test/common/gen_sample -p 100 -c 11 -i -v -s 9
+(see gen_sample -h)
 ```
 
