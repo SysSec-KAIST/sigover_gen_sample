@@ -68,7 +68,7 @@ sudo lib/test/common/gen_sample -p 100 -c 11 -i -v -s 9
 ```
 
 # Credits
-We sincerely appreciate the [SRS team](https://www.srs.io) for making a their great software available :)
+We sincerely appreciate the [SRS team](https://www.srs.io) for making their great software available :)
 
 
 # BibTex
